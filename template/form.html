@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h2 align="center">Check Price</h2>
+<form method="post" align="Center" action="predict">
+{%csrf_token%}
+<div class="col-md-4 col-sm-4"><label>Present Price:</label>
+</div> <input name="Present_Price" type="text" value={{temp.Present_Price}}><br><br>
+
+<div class="col-md-4 col-sm-4"><label>K/M Driven:</label>
+</div> <input name="Kms_Driven" type="text" value={{temp.Kms_Driven}}><br><br>
+
+    <div class="col-md-4 col-sm-4"><label >Owner:</label>
+</div> <input name="Owner" type="text" value={{temp.Owner}}><br><br>
+
+
+    <div class="col-md-4 col-sm-4"><label>Year of Purchase:</label>
+</div> <input name="no_year" type="text" value={{temp.no_year}}><br><br>
+
+    <div class="col-md-4 col-sm-4"><label >Fuel Type:</label>
+</div> <input name="Fuel_Type" type="text" value={{temp.Fuel_Type}}><br><br>
+
+    <div class="col-md-4 col-sm-4"><label>Seller Type:</label>
+</div> <input name="Seller_Type" type="text" value={{temp.Seller_Type}}><br><br>
+
+    <div class="col-md-4 col-sm-4"><label >Transmission:</label>
+</div> <input name="Transmission" type="text" value={{temp.Transmission}}><br><br>
+
+
+
+
+    <input type="submit" value="submit">
+</form>
+ <br>
+{{scoreval}}
+</body>
+</html>
