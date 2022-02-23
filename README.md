@@ -14,6 +14,6 @@ the project is mainly divided into two parts:
  
  here we are using the jupyter notebok for feature engineering and performing EDA. and use PANDAS,SKLEARN to perform the 
  data modeling and model building.
- we have save the model or pickle it for further use.
+ all the details are given in Jupyter notebook.
 
  
